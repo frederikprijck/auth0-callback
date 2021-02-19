@@ -1,0 +1,8 @@
+<div *ngIf="user$ | async as user">
+  Logged in as: {{user.name}}
+  <button (click)="logout()">Log out</button>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
